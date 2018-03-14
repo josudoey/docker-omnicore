@@ -10,11 +10,11 @@ if [[ "$1" == "bitcoin-tx" || "$1" == "omnicore-cli" || "$1" == "omnicore-qt" ||
 server=1
 txindex=1
 printtoconsole=1
-omnilogfile=${LOG_OUTPUT}
+omnilogfile=
 logtimestamps=1
-rpcallowip=${RPC_ALLOWIP}
-rpcuser=${RPC_USER}
-rpcpassword=${RPC_PASSWORD}
+rpcallowip=${RPCALLOWIP}
+rpcuser=${RPCUSER}
+rpcpassword=${RPCPASSWORD}
 EOF
     fi
 fi

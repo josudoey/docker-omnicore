@@ -5,11 +5,10 @@ ENV OMNICORE_VER          0.3.0
 ENV OMNICORE_ARCH         x86_64
 ENV OMNICOR_CHECKSUM      fc25774b74fe9a7d329cc53327e1079cfa548988e09d3225c2fe07b6d6225161
 
-ENV RPC_ALLOWIP          "::/0"
+ENV DATA_DIR             /root/.bitcoin
+ENV RPCALLOWIP          "::/0"
 ENV RPCUSER              omnicore
 ENV RPCPASSWORD          omnicore
-ENV OMNILOGFILE          /dev/stdout
-ENV DATA_DIR             /root/.bitcoin
 
 RUN apt-get update && apt-get install -qq \
   curl
